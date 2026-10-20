@@ -1,109 +1,96 @@
-# Karthik G V — Personal Portfolio Website
+# 🚀 Karthik G V — Motion & Cyber Full-Stack Portfolio
 
-A professional portfolio website built for the **Future Interns — Full Stack Web Development, Task 1 (2026)**.
+> **Full-Stack Developer & Aspiring Cloud Engineer**  
+> MCA Scholar @ Community Institute of Management Studies (CIMS), Bangalore City University (CGPA: 8.71)  
+> Bengaluru, Karnataka, India 🇮🇳
 
-**Live site:** _add your deployed link here_
-**Author:** Karthik G V — MCA Final Year, CIMS, Bangalore City University
+[![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit_Website-00f0ff?style=for-the-badge&logo=googlechrome&logoColor=black)](https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/karthik-g-v)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/karthik18gv-gif)
 
 ---
 
-## 📖 About
+## 🌐 Live Website & Career Portal Link
 
-This is a fully responsive, single-page portfolio built with plain **HTML, CSS and JavaScript** (no framework/build step required — easy to deploy anywhere). It presents:
+The portfolio is deployed and accessible worldwide at:
+👉 **[https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/](https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/)**
 
-- A homepage / hero introduction with a signature "Developer Service Card" design
-- An About section covering education and background
-- A Skills section (languages, frameworks, databases, cloud, security, certifications)
-- A Projects section featuring real academic/personal projects (NagrikSeva, PetHub, Hostel Mitra, Interview Scheduling Automation System, Online Marketing & Shopping Platform)
-- An interactive Resume section with a downloadable PDF
-- A working Contact form
-- Dark / light mode toggle (persisted via localStorage)
-- SEO meta tags, Open Graph tags, `robots.txt` and `sitemap.xml`
+> **For Company Career Portals & Job Applications:**  
+> When applying for Software Engineer, Full-Stack Developer, or Cloud Engineer roles, paste:  
+> `https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/`
 
-## 🗂️ Project Structure
+---
 
-```
-portfolio/
-├── index.html              # Main page (all sections)
-├── css/
-│   └── style.css           # Design system + responsive styles
-├── js/
-│   └── script.js           # Theme toggle, nav, scroll reveal, contact form
-├── assets/
-│   ├── images/
-│   │   └── favicon.svg
-│   └── Karthik_GV_Resume.pdf   # ⚠️ Add your real resume here (see below)
-├── robots.txt
-├── sitemap.xml
-└── README.md
-```
+## ✨ Motion & Engineering Highlights ("The Wow Factor")
+
+1. **Interactive 60 FPS Neural Constellation Canvas**:  
+   Fluid mathematical particle physics in vanilla HTML5 Canvas that tracks mouse coordinates, forms constellation networks, and reacts to touch.
+2. **3D Parallax Tilt & Specular Light**:  
+   Real-time cursor-tracking 3D perspective transforms with dynamic holographic light sheen on developer service cards and project badges.
+3. **Interactive Recruiter CLI Terminal**:  
+   A full-featured developer console embedded in the page. Recruiters can click quick command chips or type `help`, `about`, `skills`, `projects`, `experience`, `aws`, `hire`, `contact`, and `resume` to inspect qualifications with syntax highlighting and audio feedback.
+4. **AWS Cloud Architecture Lab & Live Sandbox**:  
+   Interactive cloud topology visualizer demonstrating Route 53, S3, API Gateway, AWS Lambda, DynamoDB/RDS, and CloudWatch. Features an interactive CRUD records sandbox reflecting hands-on work from the Zoomindata internship.
+5. **Decoupled Web Audio API Sound Synthesizer**:  
+   Sci-fi micro-clicks, hover blips, and terminal chimes generated dynamically without heavy audio files. Includes persistent mute/unmute control.
+6. **Detailed Case Studies & Architecture Modals**:  
+   In-depth engineering breakdowns for capstone systems (**NagrikSeva** e-governance portal and **Hostel Mitra** management system) featuring 4-tier RBAC, database normalization, and workflows.
+7. **1-Click Recruiter Application Hub**:  
+   Copy email, phone, LinkedIn, GitHub, or formatted candidate summaries with 1 click. Includes ATS resume viewer modal and direct PDF resume download.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** — semantic structure
-- **CSS3** — custom design system (CSS variables, Grid/Flexbox, responsive breakpoints, no framework)
-- **Vanilla JavaScript** — theme persistence, mobile nav, IntersectionObserver-based scroll reveals, form handling
-- **Fonts:** Fraunces (display), Inter (body), JetBrains Mono (accents) via Google Fonts
-- Backend/database were optional per the task brief — this build ships as a fully static site so it can be deployed instantly on free static hosting. See "Adding a real backend" below if you want to extend it.
+- **Frontend:** Semantic HTML5, Modern CSS3 (CSS Variables, Grid, Flexbox, Glassmorphism), Vanilla ES6+ JavaScript.
+- **Backend & Languages:** Python, Java, JavaScript, Node.js, Express.js, Flask, SQL, JSP / Servlets.
+- **Cloud (AWS):** Amazon EC2, Amazon S3, AWS IAM, Amazon RDS, DynamoDB, API Gateway, CloudWatch.
+- **Databases:** MySQL, SQLite, Relational Modeling & Normalization (3NF).
+- **Tools:** Git & GitHub, VS Code, Linux CLI, Postman.
 
-## 🚀 Setup & Local Development
+---
 
-No build tools or dependencies are required.
+## 📁 Repository Structure
 
-1. Download / clone this repository
-2. Open `index.html` directly in a browser, **or** serve it locally for the best experience:
-   ```bash
-   # Python 3
-   python -m http.server 8000
-   # then visit http://localhost:8000
-   ```
-
-## ✏️ Before You Deploy — Customize These
-
-1. **Resume PDF** — replace `assets/Karthik_GV_Resume.pdf` with your real resume (see `assets/README_RESUME.txt`).
-2. **Contact form email delivery** — this form works out of the box via a `mailto:` fallback. For real inbox email notifications without writing a backend:
-   - Create a free form at [Formspree](https://formspree.io)
-   - In `js/script.js`, set `FORMSPREE_ENDPOINT = 'https://formspree.io/f/your-id'`
-3. **GitHub / LinkedIn links** — update the placeholder URLs in `index.html` (`#projects` and `#contact` sections) to your real GitHub repos and LinkedIn profile.
-4. **og-cover image** — add a 1200×630 screenshot of the site to `assets/images/og-cover.png` for nicer link previews on social media.
-5. **Canonical domain** — update `<link rel="canonical">`, `og:url`, `robots.txt` and `sitemap.xml` once you have your final deployed domain.
-
-## 🌐 Deployment (free options)
-
-**GitHub Pages**
-```bash
-git init
-git add .
-git commit -m "Initial portfolio commit"
-git branch -M main
-git remote add origin https://github.com/<your-username>/portfolio.git
-git push -u origin main
 ```
-Then in the repo: **Settings → Pages → Deploy from branch → main → / (root)**.
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # Automated GitHub Pages CI/CD deployment
+├── assets/
+│   ├── images/
+│   │   └── favicon.svg         # Monogram SVG vector badge
+│   └── Karthik_GV_Resume.pdf   # Official ATS Resume PDF
+├── css/
+│   └── style.css               # Design system, glassmorphism, 3D tilt, cyber animations
+├── js/
+│   └── script.js               # Canvas particle engine, terminal CLI, audio synth, AWS sandbox
+├── index.html                  # Semantic, accessible single-page motion portfolio
+├── robots.txt                  # SEO crawler rules
+├── sitemap.xml                 # XML sitemap for search indexation
+└── README.md                   # Documentation & showcase
+```
 
-**Netlify / Vercel**
-- Drag-and-drop the project folder onto [Netlify Drop](https://app.netlify.com/drop), or
-- Import the GitHub repo into [Vercel](https://vercel.com/new) (framework preset: "Other" / static)
+---
 
-## 🔌 Adding a Real Backend (optional, per task brief)
+## 🚀 Local Development
 
-The task brief lists a backend/database as optional. If you want to extend this into a full-stack app later:
-- **Node.js + Express** — add an `/api/contact` route that saves messages to MongoDB/MySQL and sends an email via Nodemailer
-- Given your existing stack, a **Flask** backend (matching your NagrikSeva/PetHub experience) would also drop in cleanly — a single `/contact` POST route writing to SQLite is enough to satisfy "contact form with email notifications."
+To run locally:
+```bash
+# Python 3 built-in server
+python -m http.server 8000
+# Open in browser: http://localhost:8000
+```
+Or with Node.js:
+```bash
+npx serve .
+```
 
-## ✅ Task Checklist (Future Interns — Task 1)
+---
 
-- [x] Professional homepage introducing who you are
-- [x] Projects section showcasing real work
-- [x] About / resume section highlighting skills
-- [x] Contact section with working form
-- [x] Responsive design (mobile + desktop)
-- [x] SEO-friendly structure (meta tags, semantic HTML, sitemap, robots.txt)
-- [x] Dark / light mode (bonus)
-- [ ] Deploy to live URL and add the link at the top of this README
-- [ ] Push to a public GitHub repository
-- [ ] Share on LinkedIn tagging Future Interns
+## 📬 Contact & Connect
 
-## 📄 License
-
-Free to use and adapt as your own personal portfolio.
+- **Email:** [karthik18.gv@gmail.com](mailto:karthik18.gv@gmail.com)
+- **Phone:** [+91 7022050129](tel:+917022050129)
+- **LinkedIn:** [linkedin.com/in/karthik-g-v](https://linkedin.com/in/karthik-g-v)
+- **GitHub:** [github.com/karthik18gv-gif](https://github.com/karthik18gv-gif)
+- **Location:** Bengaluru, Karnataka, India

@@ -1,323 +1,1239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karthik G V | Full-Stack Developer — Portfolio</title>
-<meta name="description" content="Karthik G V — Full-Stack Developer specializing in Python/Django, Flask, Java/JSP and cloud computing. MCA student at CIMS, Bangalore City University. View projects including NagrikSeva, PetHub and Hostel Mitra.">
-<meta name="keywords" content="Karthik G V, Karthi, Full Stack Developer, Python Django Developer Bangalore, Flask Developer, MCA CIMS, Portfolio">
-<meta name="author" content="Karthik G V">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://karthikgv.dev/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthik G V | Full-Stack Developer &amp; Aspiring Cloud Engineer</title>
+  
+  <!-- Meta Information -->
+  <meta name="description" content="Portfolio of Karthik G V — Full-Stack Developer & Aspiring Cloud Engineer (AWS). MCA Scholar at CIMS Bangalore (CGPA 8.71). Building database-driven applications with Python, Java, Node.js and scalable cloud architectures.">
+  <meta name="keywords" content="Karthik G V, Karthik GV, Full Stack Developer, Cloud Engineer, AWS Developer Bangalore, Python Flask, Node.js, MCA CIMS, Portfolio">
+  <meta name="author" content="Karthik G V">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="Karthik G V | Full-Stack Developer">
-<meta property="og:description" content="Full-Stack Developer building real-world web platforms — e-governance systems, pet adoption apps, hostel management and more.">
-<meta property="og:image" content="assets/images/og-cover.png">
-<meta property="og:url" content="https://karthikgv.dev/">
+  <!-- Open Graph / Facebook / LinkedIn / WhatsApp Link Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Karthik G V | Full-Stack Developer &amp; Aspiring Cloud Engineer">
+  <meta property="og:description" content="Explore Karthik G V's interactive motion portfolio: Full-stack applications (NagrikSeva, Hostel Mitra), AWS cloud labs, interactive recruiter terminal, and verified credentials.">
+  <meta property="og:url" content="https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/">
+  <meta property="og:image" content="assets/images/favicon.svg">
 
-<!-- Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Karthik G V | Full-Stack Developer">
-<meta name="twitter:description" content="MCA final-year developer — Python/Django, Flask, Java/JSP, Cloud. Explore my projects and get in touch.">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Karthik G V | Full-Stack Developer &amp; Cloud Engineer">
+  <meta name="twitter:description" content="MCA Scholar at CIMS Bangalore (CGPA 8.71). Full-Stack Developer & AWS Cloud Engineer.">
 
-<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
 
-<!-- Skip link for accessibility -->
-<a class="skip-link" href="#main">Skip to content</a>
+  <!-- Background Interactive Canvas -->
+  <canvas id="bg-canvas"></canvas>
 
-<!-- ============ NAV ============ -->
-<header class="site-header" id="siteHeader">
-  <div class="nav-wrap">
-    <a href="#home" class="brand">
-      <span class="brand-mark">KGV</span>
-      <span class="brand-name">Karthik&nbsp;G&nbsp;V</span>
-    </a>
+  <!-- Ambient Glow Lights -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
 
-    <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <!-- Toast Notice -->
+  <div id="toastNotice" class="toast-notice" role="alert" aria-live="polite">✓ Link copied to clipboard!</div>
 
-    <div class="nav-actions">
-      <button id="themeToggle" class="icon-btn" aria-label="Toggle dark / light mode" title="Toggle theme">
-        <svg id="iconMoon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg id="iconSun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-      </button>
-      <button id="navToggle" class="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="home">
-    <div class="hero-grid">
-      <div class="hero-copy">
-        <p class="eyebrow">Full-Stack Developer &middot; Bengaluru, India</p>
-        <h1 class="hero-title">I build software<br> the way <span class="accent">institutions</span><br> build trust —<br>quietly, and to last.</h1>
-        <p class="hero-sub">MCA final-year student at CIMS, Bangalore City University (CGPA 8.71), building real citizen-facing platforms with Python, Flask, Django and Java. Currently shipping <strong>NagrikSeva</strong>, an integrated citizen-services &amp; pension-management portal.</p>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="assets/Karthik_GV_Resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand" aria-label="Karthik G V Home">
+        <span class="brand-badge">[ KGV ]</span>
+        <div class="brand-info">
+          <span class="brand-name">Karthik G V</span>
+          <span class="brand-status"><span class="status-dot"></span> Available for Hire</span>
         </div>
-        <div class="hero-meta">
-          <span>🌐 English</span><span>·</span><span>తెలుగు</span><span>·</span><span>ಕನ್ನಡ</span><span>·</span><span>हिंदी</span>
-        </div>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#about" class="nav-link"><span>01.</span>About</a></li>
+          <li><a href="#skills" class="nav-link"><span>02.</span>Skills</a></li>
+          <li><a href="#cloud-lab" class="nav-link"><span>03.</span>Cloud Lab</a></li>
+          <li><a href="#projects" class="nav-link"><span>04.</span>Projects</a></li>
+          <li><a href="#experience" class="nav-link"><span>05.</span>Experience</a></li>
+          <li><a href="#resume" class="nav-link"><span>06.</span>Resume</a></li>
+          <li><a href="#contact" class="nav-link"><span>07.</span>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="soundToggle" class="icon-btn" aria-label="Toggle Sound Effects" title="Enable Sound FX">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+        </button>
+
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle Theme" title="Toggle Theme">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+
+        <a href="#contact" class="btn btn-outline-cyan btn-sm" style="display:none; @media(min-width:768px){display:inline-flex;}">Let's Talk</a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
       </div>
+    </div>
+  </header>
 
-      <div class="hero-card-wrap">
-        <!-- Signature element: Developer ID / Service Card -->
-        <div class="id-card" id="idCard">
-          <div class="id-card-top">
-            <span class="id-card-seal">◎</span>
-            <div>
-              <p class="id-card-issuer">DEVELOPER SERVICE CARD</p>
-              <p class="id-card-no">NO. KGV / FS-DEV / 2026</p>
+  <main>
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left Hero Content -->
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <div class="hero-live-badge">
+                <span class="pulse-indicator"></span>
+                <span>FULL-STACK DEVELOPER &amp; ASPIRING CLOUD ENGINEER</span>
+              </div>
+            </div>
+
+            <h1 class="hero-title">
+              Architecting Resilient Web Platforms &amp; Scalable Cloud Systems with
+              <span class="highlight typewriter-wrap">
+                <span id="typewriterText">Full-Stack Developer</span><span class="cursor-blink">|</span>
+              </span>
+            </h1>
+
+            <p class="hero-sub">
+              MCA Scholar at <strong>Community Institute of Management Studies (CIMS Bangalore, CGPA 8.71)</strong> with practical industry internship experience at <strong>Vinqube Technologies</strong> and <strong>Zoomindata</strong>. Passionate about Python, Java, Node.js, and architecting real-world AWS cloud infrastructure.
+            </p>
+
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Work</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+
+              <a href="assets/Karthik_GV_Resume.pdf" download="Karthik_GV_Resume.pdf" class="btn btn-secondary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Download Resume (PDF)</span>
+              </a>
+
+              <a href="#terminal" class="btn btn-outline-cyan">
+                <span>Recruiter Terminal 💻</span>
+              </a>
+            </div>
+
+            <!-- Metrics Ribbon -->
+            <div class="hero-metrics">
+              <div class="metric-box">
+                <span class="metric-num">8.71</span>
+                <span class="metric-label">MCA CGPA (Bangalore City Univ)</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num">~30%</span>
+                <span class="metric-label">UI Inconsistency Drop (Vinqube)</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num">AWS Core</span>
+                <span class="metric-label">EC2 · S3 · IAM · RDS (Zoomindata)</span>
+              </div>
+              <div class="metric-box">
+                <span class="metric-num">5+</span>
+                <span class="metric-label">Database Systems Built</span>
+              </div>
             </div>
           </div>
-          <div class="id-card-photo" aria-hidden="true">KGV</div>
-          <h2 class="id-card-name">Karthik G V</h2>
-          <p class="id-card-role">Full-Stack Developer</p>
-          <dl class="id-card-details">
-            <div><dt>Stack</dt><dd>Python · Flask · Django · Java/JSP</dd></div>
-            <div><dt>Focus</dt><dd>Cloud &amp; Full-Stack Systems</dd></div>
-            <div><dt>Based in</dt><dd>Bengaluru, India</dd></div>
-            <div><dt>Status</dt><dd class="status-live"><span class="dot"></span>Open to opportunities</dd></div>
-          </dl>
-          <div class="id-card-strip"></div>
+
+          <!-- Right: 3D Holographic Identity Card -->
+          <div class="hero-card-container">
+            <div class="holo-card" id="heroHoloCard">
+              <div class="holo-card-header">
+                <span class="holo-chip">
+                  <span class="status-dot"></span> DEV ID // VERIFIED
+                </span>
+                <span class="holo-serial">KGV-2026-MCA</span>
+              </div>
+
+              <div class="holo-avatar-wrap">
+                <div class="holo-avatar">KGV</div>
+                <div class="holo-identity">
+                  <h3>Karthik G V</h3>
+                  <p>Full-Stack &amp; Cloud Engineer</p>
+                </div>
+              </div>
+
+              <div class="holo-meta-list">
+                <div class="holo-meta-row">
+                  <span class="label">Location</span>
+                  <span class="val">Bengaluru, India 🇮🇳</span>
+                </div>
+                <div class="holo-meta-row">
+                  <span class="label">Education</span>
+                  <span class="val">MCA @ CIMS (8.71 CGPA)</span>
+                </div>
+                <div class="holo-meta-row">
+                  <span class="label">Internships</span>
+                  <span class="val">Vinqube Tech &amp; Zoomindata</span>
+                </div>
+                <div class="holo-meta-row">
+                  <span class="label">Availability</span>
+                  <span class="val green"><span class="status-dot"></span> Immediate / Open</span>
+                </div>
+              </div>
+
+              <div class="holo-stack-tags">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Java</span>
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Flask</span>
+                <span class="stack-tag">AWS Cloud</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">REST APIs</span>
+              </div>
+
+              <div class="holo-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+                <button type="button" id="viewResumeBtn" class="btn btn-secondary btn-sm">View ATS CV</button>
+              </div>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!-- ==================== RECRUITER CLI TERMINAL ==================== -->
+    <section class="section terminal-section" id="terminal">
+      <div class="container">
+        <div class="terminal-window">
+          
+          <div class="terminal-titlebar">
+            <div class="terminal-dots">
+              <span class="term-dot dot-red"></span>
+              <span class="term-dot dot-yellow"></span>
+              <span class="term-dot dot-green"></span>
+            </div>
+            <div class="terminal-title">karthik@cloud-terminal:~ (bash interactive)</div>
+            <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--text-dim);">UTF-8</div>
+          </div>
+
+          <div class="terminal-chips">
+            <span class="terminal-chip-label">Quick Commands:</span>
+            <button class="term-chip-btn" data-cmd="help">help</button>
+            <button class="term-chip-btn" data-cmd="about">about</button>
+            <button class="term-chip-btn" data-cmd="skills">skills</button>
+            <button class="term-chip-btn" data-cmd="projects">projects</button>
+            <button class="term-chip-btn" data-cmd="experience">experience</button>
+            <button class="term-chip-btn" data-cmd="aws">aws</button>
+            <button class="term-chip-btn" data-cmd="hire">hire</button>
+            <button class="term-chip-btn" data-cmd="contact">contact</button>
+            <button class="term-chip-btn" data-cmd="clear">clear</button>
+          </div>
+
+          <div class="terminal-body" id="termBody">
+            <div id="termOutput" class="term-output">
+              <div class="term-line"><span class="term-green">System initialized.</span> Welcome to Karthik G V's Interactive CLI Console.</div>
+              <div class="term-line">Type <span class="term-cyan">help</span> or click any quick command chip above to inspect qualifications, projects, and cloud skills.</div>
+              <div class="term-line" style="color:var(--text-dim); margin-top:8px;">--------------------------------------------------------------------------------</div>
+            </div>
+
+            <div class="terminal-input-row">
+              <span class="term-prompt">guest@portfolio:~$</span>
+              <input type="text" id="termInput" class="term-input" placeholder="type 'help', 'skills', 'projects'..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">01. Profile &amp; Mindset</span>
+          <h2 class="section-title">Bridging Full-Stack Code with <span class="gradient-text">Cloud Infrastructure</span></h2>
+          <p class="section-desc">Engineering resilient, database-backed web applications and taking them from local design to high-availability cloud environments.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <p class="lead-p">
+              I am a motivated Full-Stack Developer and MCA scholar at <strong>Community Institute of Management Studies (CIMS)</strong>, Bangalore City University, maintaining a CGPA of <strong>8.71</strong>.
+            </p>
+            <p>
+              My engineering philosophy revolves around solving real-world challenges through clean architectural design rather than superficial prototypes. From engineering <strong>NagrikSeva</strong> (a comprehensive 4-tier e-governance citizen services &amp; pension management portal) to developing <strong>Hostel Mitra</strong> (a streamlined campus accommodation platform), I enjoy designing normalized databases, crafting robust RESTful backends, and pairing them with intuitive, responsive user interfaces.
+            </p>
+            <p>
+              I bring hands-on industry exposure through two key internships: developing client-facing web components at <strong>Vinqube Technologies</strong> (slashing page inconsistencies by ~30%) and configuring core AWS cloud services (EC2, S3, IAM, RDS) at <strong>Zoomindata</strong>.
+            </p>
+            <p>
+              I am proficient in multilingual communication across <strong>English, Telugu, Kannada, and Hindi</strong>, enabling seamless collaboration across multidisciplinary agile teams.
+            </p>
+          </div>
+
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">💻</div>
+              <h4>Full-Stack Systems</h4>
+              <p>Developing database-driven web platforms using Python, Java, Node.js, Express, Flask, HTML5, and CSS3.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">☁️</div>
+              <h4>Cloud &amp; AWS Core</h4>
+              <p>Configuring and monitoring AWS EC2, Amazon S3, IAM policies, and RDS databases with high availability.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🗄️</div>
+              <h4>Database Architecture</h4>
+              <p>Relational database schema modeling, 3NF normalization, index optimization, and complex querying in MySQL &amp; SQLite.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🛡️</div>
+              <h4>Security &amp; Best Practices</h4>
+              <p>Applying Cyber Security fundamentals, Role-Based Access Control (RBAC), and rigorous Git version control.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">02. Technical Ecosystem</span>
+          <h2 class="section-title">Tools, Frameworks &amp; <span class="gradient-text">Core Competencies</span></h2>
+          <p class="section-desc">A carefully honed skillset blending modern languages, backend architectures, databases, and cloud engineering.</p>
+        </div>
+
+        <div class="skills-filter-nav">
+          <button class="filter-btn active" data-filter="all">All Technologies</button>
+          <button class="filter-btn" data-filter="lang">Languages</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; Web</button>
+          <button class="filter-btn" data-filter="cloud">Cloud (AWS)</button>
+          <button class="filter-btn" data-filter="db">Databases</button>
+          <button class="filter-btn" data-filter="tools">Tools &amp; Platforms</button>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="skill-category-card" data-category="lang">
+            <div class="cat-header">
+              <span class="cat-icon">&lt;/&gt;</span>
+              <h3 class="cat-title">Programming Languages</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Python</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Java</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>JavaScript (ES6+)</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>HTML5 &amp; CSS3</span><span>95%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>SQL</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Web -->
+          <div class="skill-category-card" data-category="backend">
+            <div class="cat-header">
+              <span class="cat-icon">⚙️</span>
+              <h3 class="cat-title">Backend &amp; Web Dev</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Flask (Python)</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Node.js &amp; Express.js</span><span>86%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>RESTful API Design</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Jinja2 &amp; Server Templating</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Java JSP / Servlets</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Cloud & AWS -->
+          <div class="skill-category-card" data-category="cloud">
+            <div class="cat-header">
+              <span class="cat-icon">☁️</span>
+              <h3 class="cat-title">Cloud Computing (AWS)</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Amazon EC2 Compute</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Amazon S3 Object Storage</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>AWS IAM Security Policies</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Amazon RDS Relational DB</span><span>82%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>CloudWatch &amp; Monitoring</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases -->
+          <div class="skill-category-card" data-category="db">
+            <div class="cat-header">
+              <span class="cat-icon">🗄️</span>
+              <h3 class="cat-title">Databases &amp; Storage</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>MySQL</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>SQLite</span><span>92%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>ER Modeling &amp; Normalization</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Relational Data Integrity</span><span>86%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 86%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: Tools & Platforms -->
+          <div class="skill-category-card" data-category="tools">
+            <div class="cat-header">
+              <span class="cat-icon">🛠️</span>
+              <h3 class="cat-title">Tools &amp; Platforms</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Git &amp; GitHub Workflows</span><span>92%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 92%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>VS Code &amp; Extensions</span><span>95%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Linux Terminal / Bash</span><span>80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Postman API Testing</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Security & Practices -->
+          <div class="skill-category-card" data-category="tools">
+            <div class="cat-header">
+              <span class="cat-icon">🛡️</span>
+              <h3 class="cat-title">Security &amp; Best Practices</h3>
+            </div>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Cyber Security Fundamentals</span><span>85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Role-Based Access (RBAC)</span><span>90%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Responsive UI Engineering</span><span>94%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 94%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Agile Sprint Collaboration</span><span>88%</span></div>
+                <div class="skill-bar"><div class="skill-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Certifications Ribbon -->
+        <div class="certifications-ribbon">
+          <div class="cert-heading">
+            <span>🏆</span>
+            <span>Verified Certifications &amp; Training:</span>
+          </div>
+          <div class="cert-badges">
+            <span class="cert-badge">📜 Python in Flask</span>
+            <span class="cert-badge">☁️ Cloud Computing (AWS Services)</span>
+            <span class="cert-badge">🛡️ Cyber Security (Basics)</span>
+            <span class="cert-badge">🔐 Digital Security (E-Mudhra Workshop)</span>
+            <span class="cert-badge">🚀 Intercollegiate Hackathon Finalist</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== AWS CLOUD ARCHITECTURE LAB ==================== -->
+    <section class="section" id="cloud-lab">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">03. Interactive Cloud Lab</span>
+          <h2 class="section-title">AWS Serverless Architecture &amp; <span class="gradient-text">Live Sandbox</span></h2>
+          <p class="section-desc">Visualizing modern serverless cloud patterns engineered during my AWS training and internship at Zoomindata.</p>
+        </div>
+
+        <div class="aws-lab-card">
+          <div class="aws-header-bar">
+            <div class="aws-logo-wrap">
+              <span style="font-size:2rem;">☁️</span>
+              <div>
+                <h3 style="font-size:1.35rem; font-weight:800; color:var(--text-main);">Live AWS Cloud Topology</h3>
+                <p style="font-size:0.85rem; color:var(--text-dim); font-family:var(--font-mono);">Region: ap-south-1 (Mumbai) · Click any node to inspect configuration</p>
+              </div>
+            </div>
+            <span class="aws-tag">AWS ARCHITECTURE SIMULATOR</span>
+          </div>
+
+          <!-- Interactive Topology Diagram -->
+          <div class="aws-topology-wrap">
+            <div class="topology-flow">
+              <div class="top-node active" data-node="client">
+                <span class="node-icon">👤</span>
+                <span class="node-name">Client User</span>
+                <span class="node-service">HTTPS / Web</span>
+              </div>
+
+              <div class="flow-connector"><span class="flow-packet"></span></div>
+
+              <div class="top-node" data-node="s3">
+                <span class="node-icon">🪣</span>
+                <span class="node-name">Amazon S3</span>
+                <span class="node-service">Static Hosting</span>
+              </div>
+
+              <div class="flow-connector"><span class="flow-packet" style="animation-delay: 0.6s;"></span></div>
+
+              <div class="top-node" data-node="apigateway">
+                <span class="node-icon">🚪</span>
+                <span class="node-name">API Gateway</span>
+                <span class="node-service">REST Routing</span>
+              </div>
+
+              <div class="flow-connector"><span class="flow-packet" style="animation-delay: 1.2s;"></span></div>
+
+              <div class="top-node" data-node="lambda">
+                <span class="node-icon">⚡</span>
+                <span class="node-name">AWS Lambda</span>
+                <span class="node-service">Serverless Logic</span>
+              </div>
+
+              <div class="flow-connector"><span class="flow-packet" style="animation-delay: 1.8s;"></span></div>
+
+              <div class="top-node" data-node="database">
+                <span class="node-icon">🗄️</span>
+                <span class="node-name">DynamoDB / RDS</span>
+                <span class="node-service">Persistent Data</span>
+              </div>
+
+              <div class="flow-connector"><span class="flow-packet" style="animation-delay: 2.4s;"></span></div>
+
+              <div class="top-node" data-node="cloudwatch">
+                <span class="node-icon">📊</span>
+                <span class="node-name">CloudWatch</span>
+                <span class="node-service">IAM &amp; Metrics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node Details Inspector -->
+          <div class="node-inspector-card open" id="nodeInspector">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+              <h4 id="inspectorTitle" style="color:var(--cyan); font-size:1.15rem; font-weight:700;">Global Client &amp; Users</h4>
+              <span id="inspectorStats" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--amber);">Global Access · SSL/TLS 1.3 Termination</span>
+            </div>
+            <p id="inspectorService" style="font-family:var(--font-mono); font-size:0.8rem; color:var(--text-dim); margin-bottom:6px;">Web Browser / Mobile / API Consumer</p>
+            <p id="inspectorDesc" style="color:var(--text-muted); font-size:0.9rem; line-height:1.6;">Requests originate worldwide via HTTPS. Traffic is routed efficiently with DNS, low-latency edge caching, and modern HTTP/2 protocol.</p>
+          </div>
+
+          <!-- Live Interactive Sandbox Interface -->
+          <div style="border-top:1px solid var(--border-subtle); padding-top:24px;">
+            <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:20px;">
+              <div>
+                <h4 style="font-size:1.1rem; font-weight:700; color:var(--text-main);">Serverless Student Records Sandbox</h4>
+                <p style="font-size:0.82rem; color:var(--text-dim);">Demonstrating real-time CRUD operations against AWS Lambda &amp; DynamoDB endpoints.</p>
+              </div>
+              <div style="display:flex; gap:10px;">
+                <button type="button" id="loadStudentsBtn" class="btn btn-primary btn-sm">Load Students from AWS</button>
+              </div>
+            </div>
+
+            <!-- Student Registration Form -->
+            <form id="studentRegistrationForm" style="margin-bottom:24px;">
+              <div class="form-grid-3">
+                <div class="form-field">
+                  <label for="studentId">Student ID</label>
+                  <input type="text" id="studentId" name="student_id" class="form-input" placeholder="e.g. STU104" required>
+                </div>
+                <div class="form-field">
+                  <label for="studentName">Student Name</label>
+                  <input type="text" id="studentName" name="name" class="form-input" placeholder="Full name" required>
+                </div>
+                <div class="form-field">
+                  <label for="studentEmail">Email Address</label>
+                  <input type="email" id="studentEmail" name="email" class="form-input" placeholder="student@example.com" required>
+                </div>
+                <div class="form-field">
+                  <label for="studentPhone">Phone Number</label>
+                  <input type="tel" id="studentPhone" name="phone" class="form-input" placeholder="+91 9876543210" required>
+                </div>
+                <div class="form-field">
+                  <label for="studentCourse">Course</label>
+                  <input type="text" id="studentCourse" name="course" class="form-input" placeholder="MCA / Computer Science" required>
+                </div>
+                <div class="form-field">
+                  <label for="studentCollege">College / Institution</label>
+                  <input type="text" id="studentCollege" name="college" class="form-input" placeholder="CIMS Bangalore" required>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-outline-cyan btn-sm">Register Student via AWS Lambda</button>
+            </form>
+
+            <div id="sandboxStatus" style="font-family:var(--font-mono); font-size:0.8rem; color:var(--cyan); margin-bottom:12px;">
+              Ready. Click "Load Students from AWS" to query records.
+            </div>
+
+            <div class="students-table-wrap">
+              <table class="students-table">
+                <thead>
+                  <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Course</th>
+                    <th>College</th>
+                  </tr>
+                </thead>
+                <tbody id="studentsTableBody">
+                  <tr>
+                    <td><strong style="color:var(--cyan); font-family:var(--font-mono);">STU101</strong></td>
+                    <td>Karthik G V</td>
+                    <td>karthik18.gv@gmail.com</td>
+                    <td>917022050129</td>
+                    <td><span class="project-type-tag">MCA</span></td>
+                    <td>CIMS Bangalore</td>
+                  </tr>
+                  <tr>
+                    <td><strong style="color:var(--cyan); font-family:var(--font-mono);">STU102</strong></td>
+                    <td>Priya Sharma</td>
+                    <td>priya.s@example.com</td>
+                    <td>9845012345</td>
+                    <td><span class="project-type-tag">Computer Science</span></td>
+                    <td>NRI Institute</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FEATURED PROJECTS ==================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">04. Engineering Portfolio</span>
+          <h2 class="section-title">Production-Grade <span class="gradient-text">Featured Projects</span></h2>
+          <p class="section-desc">Real-world applications engineered end-to-end — from database schemas and security controls to responsive user interfaces.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: NagrikSeva -->
+          <article class="project-card featured" data-category="fullstack nodejs db">
+            <div>
+              <div class="project-badge-top">
+                <span class="project-type-tag">Featured · e-Governance Portal</span>
+                <span class="project-stars">⭐ Capstone Highlight</span>
+              </div>
+
+              <h3 class="project-title">NagrikSeva – Integrated Citizen Services &amp; Pension Management</h3>
+              <p class="project-desc">
+                A unified e-governance platform enabling citizens to apply for verified government certificates and submit pension claims, while empowering administrative officers to process approvals seamlessly.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>4-Tier RBAC:</strong> Dedicated portals for Citizens, Verification Staff, Department Officers &amp; Admins.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Document Lifecycle Engine:</strong> Secure certificate upload, verification trails &amp; dynamic pension calculator.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Real-Time Pipeline:</strong> Granular application tracking with automated notifications and status indicators.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="stack-tag">Node.js</span>
+                <span class="stack-tag">Express.js</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">HTML5 / CSS3</span>
+                <span class="stack-tag">JavaScript</span>
+                <span class="stack-tag">RBAC</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/karthik18gv-gif/nagrikseva" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>GitHub Repository ↗</span>
+                </a>
+                <button type="button" class="btn btn-secondary btn-sm open-case-study" data-study="nagrikseva">
+                  <span>Architecture &amp; Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Hostel Mitra -->
+          <article class="project-card" data-category="fullstack python db">
+            <div>
+              <div class="project-badge-top">
+                <span class="project-type-tag">Campus Automation Platform</span>
+                <span class="project-stars">⚡ Academic Project</span>
+              </div>
+
+              <h3 class="project-title">Hostel Mitra – Smart Hostel Management System</h3>
+              <p class="project-desc">
+                A comprehensive digital administration solution modernizing collegiate hostel operations by eliminating manual record keeping and optimizing room allocations.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Smart Room Allocation:</strong> Automated room allocation algorithm balancing capacity and student branch.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Student Ledger:</strong> Fee tracking, payment receipts, and automated outstanding dues computation.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Leave &amp; Grievance Tracking:</strong> Digital gate-pass approval and categorized maintenance ticketing.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="stack-tag">Python</span>
+                <span class="stack-tag">Flask</span>
+                <span class="stack-tag">SQLite</span>
+                <span class="stack-tag">HTML5</span>
+                <span class="stack-tag">CSS3</span>
+                <span class="stack-tag">Responsive UI</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/karthik18gv-gif/Hostel-Mitra" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                  <span>GitHub Repository ↗</span>
+                </a>
+                <button type="button" class="btn btn-secondary btn-sm open-case-study" data-study="hostelmitra">
+                  <span>Case Study</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: AWS Serverless Cloud Management -->
+          <article class="project-card" data-category="cloud fullstack">
+            <div>
+              <div class="project-badge-top">
+                <span class="project-type-tag">AWS Cloud Architecture</span>
+                <span class="project-stars">☁️ Serverless</span>
+              </div>
+
+              <h3 class="project-title">AWS Serverless Student Records Platform</h3>
+              <p class="project-desc">
+                An event-driven serverless application built on top of AWS managed services for sub-second RESTful operations, high concurrency, and zero server maintenance overhead.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Decoupled Microservices:</strong> S3 Static Hosting ➔ API Gateway ➔ AWS Lambda ➔ DynamoDB.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Security Hardened:</strong> Strict IAM roles, least-privilege policies, and CORS configuration.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Real-time Telemetry:</strong> CloudWatch metrics, structured log groups, and latency monitoring.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="stack-tag">AWS Lambda</span>
+                <span class="stack-tag">Amazon S3</span>
+                <span class="stack-tag">Amazon DynamoDB</span>
+                <span class="stack-tag">API Gateway</span>
+                <span class="stack-tag">CloudWatch</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="#cloud-lab" class="btn btn-primary btn-sm">
+                  <span>Try Interactive Sandbox ↑</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Interview Scheduling System -->
+          <article class="project-card" data-category="fullstack backend db">
+            <div>
+              <div class="project-badge-top">
+                <span class="project-type-tag">Enterprise Workflow</span>
+                <span class="project-stars">☕ Java Enterprise</span>
+              </div>
+
+              <h3 class="project-title">Interview Scheduling Automation System</h3>
+              <p class="project-desc">
+                An enterprise web platform designed to synchronize panel availability with candidate interview booking, eliminating scheduling conflicts and communication overhead.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Automated Slot Matching:</strong> Prevents panel overbooking and optimizes interview day timelines.</span>
+                </div>
+                <div class="feat-item">
+                  <span class="feat-bullet">▹</span>
+                  <span><strong>Relational Integrity:</strong> Built with robust JDBC connections and structured MySQL schemas.</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="project-tags">
+                <span class="stack-tag">Java</span>
+                <span class="stack-tag">JSP / Servlets</span>
+                <span class="stack-tag">MySQL</span>
+                <span class="stack-tag">HTML5 / CSS3</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/karthik18gv-gif" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                  <span>GitHub Profile ↗</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE & EDUCATION ==================== -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">05. Career &amp; Academic Journey</span>
+          <h2 class="section-title">Industry Internships &amp; <span class="gradient-text">Academic Foundation</span></h2>
+          <p class="section-desc">Demonstrated technical growth, hands-on production engineering, and academic excellence.</p>
+        </div>
+
+        <div class="timeline-wrap">
+
+          <!-- Item 1: Zoomindata -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">Cloud Computing Intern (AWS)</h3>
+                  <span class="tl-company">Zoomindata</span>
+                </div>
+                <span class="tl-period">Aug 2026 – Sep 2026</span>
+              </div>
+              <ul class="tl-details">
+                <li>Assisted in deploying and configuring AWS core services (EC2, S3, IAM, RDS) as part of cloud-based application environments.</li>
+                <li>Supported continuous monitoring and basic troubleshooting of cloud infrastructure, gaining hands-on exposure to real-world AWS workflows.</li>
+                <li>Authored and documented cloud setup processes, IAM permission boundaries, and best practices to support team knowledge sharing.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 2: Vinqube Technologies -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">Web Development Intern</h3>
+                  <span class="tl-company">Vinqube Technologies Pvt. Ltd.</span>
+                </div>
+                <span class="tl-period">Apr 2024 – Jun 2024</span>
+              </div>
+              <ul class="tl-details">
+                <li>Developed high-fidelity, responsive UI components using HTML5, CSS3, and JavaScript, reducing page inconsistencies by ~30% across client-facing modules.</li>
+                <li>Collaborated closely with cross-functional development teams in agile sprint cycles to implement new features and refine existing functionality.</li>
+                <li>Gained hands-on experience in real-world web development workflows, code reviews, and Git version control.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 3: Master of Computer Applications -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">Master of Computer Applications (MCA)</h3>
+                  <span class="tl-company">Community Institute of Management Studies (CIMS) · Bangalore City University</span>
+                </div>
+                <span class="tl-period">2026 – Present · CGPA: 8.71</span>
+              </div>
+              <ul class="tl-details">
+                <li>Maintained academic distinction with a CGPA of <strong>8.71</strong>, specializing in Advanced Software Engineering, Cloud Systems, and Database Management.</li>
+                <li>Engineered capstone full-stack systems (NagrikSeva e-governance portal and cloud computing architectures).</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 4: Bachelor of Computer Applications -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">Bachelor of Computer Applications (BCA)</h3>
+                  <span class="tl-company">NRI Institute, Bangalore</span>
+                </div>
+                <span class="tl-period">2021 – 2024 · CGPA: 8.02</span>
+              </div>
+              <ul class="tl-details">
+                <li>Graduated with a CGPA of <strong>8.02</strong> with comprehensive coursework in Data Structures, Object-Oriented Programming (Java/Python), RDBMS, and Web Technologies.</li>
+                <li>Engineered Hostel Mitra as a primary academic project.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Item 5: Pre-University Course -->
+          <div class="timeline-item">
+            <div class="timeline-node"></div>
+            <div class="timeline-card">
+              <div class="tl-header">
+                <div>
+                  <h3 class="tl-role">Pre-University Course (PCMC)</h3>
+                  <span class="tl-company">Physics, Chemistry, Mathematics, Computer Science</span>
+                </div>
+                <span class="tl-period">Completed 2021</span>
+              </div>
+              <ul class="tl-details">
+                <li>Built early analytical foundations in mathematics, algorithmic problem solving, and procedural programming.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESUME HUB ==================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-preview-box">
+          <div class="resume-text-side">
+            <span class="section-tag" style="margin-bottom:8px;">06. Career Ready Document</span>
+            <h3>Looking for my complete resume?</h3>
+            <p>
+              Download an ATS-optimized, high-resolution PDF outlining my technical skills, internship impacts, educational credentials, and software engineering capstones.
+            </p>
+          </div>
+
+          <div style="display:flex; flex-wrap:wrap; gap:14px;">
+            <a href="assets/Karthik_GV_Resume.pdf" download="Karthik_GV_Resume.pdf" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download PDF Resume</span>
+            </a>
+
+            <button type="button" class="btn btn-secondary" onclick="copyText('https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/', 'Portfolio Link')">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+              <span>Copy Portfolio URL</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">07. Connect &amp; Hire</span>
+          <h2 class="section-title">Let's Build Something <span class="gradient-text">Exceptional</span></h2>
+          <p class="section-desc">Open to Full-Stack Developer roles, Cloud Engineering opportunities, and technical collaborations. Based in Bengaluru — available for on-site, hybrid, or remote positions.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Info Cards -->
+          <div class="contact-info-cards">
+            
+            <div class="contact-card">
+              <div class="contact-meta">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <div class="contact-label">Email Address</div>
+                  <a href="mailto:karthik18.gv@gmail.com" class="contact-val">karthik18.gv@gmail.com</a>
+                </div>
+              </div>
+              <button class="btn btn-outline-cyan btn-sm" onclick="copyText('karthik18.gv@gmail.com', 'Email')">Copy</button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-meta">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <div class="contact-label">Direct Phone</div>
+                  <a href="tel:+917022050129" class="contact-val">+91 7022050129</a>
+                </div>
+              </div>
+              <button class="btn btn-outline-cyan btn-sm" onclick="copyText('+917022050129', 'Phone Number')">Copy</button>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-meta">
+                <div class="contact-icon">💼</div>
+                <div>
+                  <div class="contact-label">LinkedIn Profile</div>
+                  <a href="https://linkedin.com/in/karthik-g-v" target="_blank" rel="noopener" class="contact-val">linkedin.com/in/karthik-g-v</a>
+                </div>
+              </div>
+              <a href="https://linkedin.com/in/karthik-g-v" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">Open ↗</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-meta">
+                <div class="contact-icon">🐙</div>
+                <div>
+                  <div class="contact-label">GitHub Profile</div>
+                  <a href="https://github.com/karthik18gv-gif" target="_blank" rel="noopener" class="contact-val">github.com/karthik18gv-gif</a>
+                </div>
+              </div>
+              <a href="https://github.com/karthik18gv-gif" target="_blank" rel="noopener" class="btn btn-outline-cyan btn-sm">Open ↗</a>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-meta">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <div class="contact-label">Location</div>
+                  <span class="contact-val">Bengaluru, Karnataka, India</span>
+                </div>
+              </div>
+              <span class="project-type-tag">IST (UTC+5:30)</span>
+            </div>
+
+            <!-- Recruiter Portal Copy Snippet Box -->
+            <div class="recruiter-snippet-box">
+              <div class="snippet-header">
+                <span class="snippet-title">📋 1-Click Recruiter Application Snippet:</span>
+                <button class="btn btn-primary btn-sm" onclick="copyText('Karthik G V | Full-Stack Developer & Aspiring Cloud Engineer\nMCA (8.71 CGPA) | Bengaluru, India\nPortfolio: https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/\nGitHub: https://github.com/karthik18gv-gif\nLinkedIn: https://linkedin.com/in/karthik-g-v\nEmail: karthik18.gv@gmail.com | Phone: +91 7022050129', 'Career Portal Application Snippet')">Copy for Portal</button>
+              </div>
+              <div class="snippet-text">Karthik G V | Full-Stack Developer &amp; Aspiring Cloud Engineer
+MCA (8.71 CGPA) | Bengaluru, India
+Portfolio: https://karthik18gv-gif.github.io/futureinterns-task1-karthik-portfolio/
+GitHub: https://github.com/karthik18gv-gif
+Email: karthik18.gv@gmail.com | Phone: +91 7022050129</div>
+            </div>
+
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size:1.35rem; font-weight:800; color:var(--text-main); margin-bottom:8px;">Send a Direct Message</h3>
+            <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:24px;">I respond promptly to recruiter inquiries, interview schedules, and engineering discussions.</p>
+
+            <form id="mainContactForm" class="contact-form">
+              <div class="form-group">
+                <label for="contactName">Your Name *</label>
+                <input type="text" id="contactName" name="name" placeholder="e.g. John Doe / Hiring Manager" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail">Your Work Email *</label>
+                <input type="email" id="contactEmail" name="email" placeholder="john.doe@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject">Subject *</label>
+                <input type="text" id="contactSubject" name="subject" placeholder="e.g. Full-Stack / Cloud Engineering Opportunity" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Message *</label>
+                <textarea id="contactMessage" name="message" rows="5" placeholder="Share details about the role, technical requirements, or project..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">
+                <span>Send Message 🚀</span>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        © <span id="footerYear">2026</span> Karthik G V. Engineered with Semantic HTML5, CSS3, &amp; Vanilla JavaScript.
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/karthik18gv-gif" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/in/karthik-g-v" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="mailto:karthik18.gv@gmail.com" class="footer-link">Email</a>
+        <a href="#home" class="footer-link">Back to Top ↑</a>
       </div>
     </div>
-    <a href="#about" class="scroll-cue" aria-label="Scroll to About">↓</a>
-  </section>
+  </footer>
 
-  <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
-    <div class="section-head">
-      <p class="eyebrow">About</p>
-      <h2>Background &amp; goals</h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>I'm a final-year MCA student at <strong>Community Institute of Management Studies (CIMS)</strong>, Bangalore City University, maintaining a CGPA of <strong>8.71</strong>. Before this, I completed my BCA at NRI Institute, Bangalore, and worked as a Web Development Intern at <strong>Vinqube Technologies</strong>, where I got my first real taste of shipping code that other people depend on.</p>
-        <p>What I actually enjoy is building systems that model real processes — citizen services, pet adoption, hostel management, interview scheduling — rather than tutorial-style CRUD apps. I like the backend as much as the interface: designing the database, getting the business logic right, and then making sure the UI doesn't get in the way.</p>
-        <p>I'm currently focused on entering the IT industry as a <strong>Software Engineer / Full-Stack Developer</strong>, with a growing interest in <strong>cloud computing (AWS)</strong> — I run my cloud experiments out of the Mumbai (ap-south-1) region.</p>
-        <div class="about-facts">
-          <div class="fact"><span>8.71</span><small>MCA CGPA</small></div>
-          <div class="fact"><span>5+</span><small>Full-stack projects built</small></div>
-          <div class="fact"><span>4</span><small>Languages spoken</small></div>
-          <div class="fact"><span>3</span><small>Certifications earned</small></div>
-        </div>
-      </div>
-      <div class="about-timeline">
-        <h3>Education &amp; Experience</h3>
-        <ul class="timeline">
-          <li>
-            <p class="tl-role">MCA — Master of Computer Applications</p>
-            <p class="tl-org">CIMS, Bangalore City University</p>
-            <p class="tl-meta">Final Year &middot; CGPA 8.71</p>
-          </li>
-          <li>
-            <p class="tl-role">Web Development Intern</p>
-            <p class="tl-org">Vinqube Technologies</p>
-            <p class="tl-meta">Hands-on frontend &amp; backend development</p>
-          </li>
-          <li>
-            <p class="tl-role">BCA — Bachelor of Computer Applications</p>
-            <p class="tl-org">NRI Institute, Bangalore</p>
-            <p class="tl-meta">Foundation in programming &amp; systems</p>
-          </li>
-        </ul>
+  <!-- ==================== MODALS ==================== -->
+  
+  <!-- Project Architecture Case Study Modal -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close-btn" id="modalClose" aria-label="Close modal">✕</button>
+      <div id="modalBody">
+        <!-- Injected via JavaScript -->
       </div>
     </div>
-  </section>
-
-  <!-- ============ SKILLS ============ -->
-  <section class="section section-alt" id="skills">
-    <div class="section-head">
-      <p class="eyebrow">Skills</p>
-      <h2>Tech stack &amp; tools</h2>
-    </div>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Languages</h3>
-        <div class="tags"><span>Python</span><span>Java</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>SQL</span></div>
-      </div>
-      <div class="skill-card">
-        <h3>Backend Frameworks</h3>
-        <div class="tags"><span>Flask</span><span>Django</span><span>JSP / Servlets</span><span>REST APIs</span><span>Jinja2</span></div>
-      </div>
-      <div class="skill-card">
-        <h3>Databases</h3>
-        <div class="tags"><span>MySQL</span><span>SQLite</span><span>Database Design</span><span>ER Modeling</span></div>
-      </div>
-      <div class="skill-card">
-        <h3>Cloud &amp; DevOps</h3>
-        <div class="tags"><span>AWS (ap-south-1)</span><span>Cloud Computing</span><span>Git &amp; GitHub</span><span>Deployment</span></div>
-      </div>
-      <div class="skill-card">
-        <h3>Security</h3>
-        <div class="tags"><span>Cyber Security Fundamentals</span><span>Cryptography &amp; Network Security</span></div>
-      </div>
-      <div class="skill-card">
-        <h3>Certifications</h3>
-        <div class="tags"><span>Cloud Computing</span><span>Flask Development</span><span>Cyber Security</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ PROJECTS ============ -->
-  <section class="section" id="projects">
-    <div class="section-head">
-      <p class="eyebrow">Projects</p>
-      <h2>Selected work</h2>
-      <p class="section-sub">Real systems built end-to-end — from schema design to UI — not tutorial clones.</p>
-    </div>
-
-    <div class="projects-grid">
-
-      <article class="project-card project-card--featured">
-        <div class="project-tag">Currently building</div>
-        <h3>NagrikSeva</h3>
-        <p class="project-desc">A full-stack e-governance platform for Integrated Citizen Services &amp; Pension Management. Built solo as an MCA capstone project, with separate citizen, officer and admin dashboards.</p>
-        <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>Jinja2</span><span>JavaScript</span></div>
-        <div class="project-links">
-          <a href="https://github.com/karthik18gv-gif/nagrikseva" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3>Hostel Mitra</h3>
-        <p class="project-desc">College hostel management system covering room allocation, complaints and student records — my primary academic capstone, refined across multiple ER and use-case design iterations.</p>
-        <div class="tags"><span>Python</span><span>MySQL</span><span>Web App</span></div>
-        <div class="project-links">
-          <a href="https://github.com/karthik18gv-gif/Hostel-Mitra" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-      </article>
-
-      <article class="project-card">
-        <h3>Interview Scheduling Automation System</h3>
-        <p class="project-desc">Automates interview slot booking and coordination between candidates and panels, removing manual back-and-forth scheduling.</p>
-        <div class="tags"><span>Java</span><span>JSP</span><span>MySQL</span></div>
-        <div class="project-links">
-          <a href="https://github.com/karthik18gv-gif/interview-scheduler" target="_blank" rel="noopener">GitHub ↗</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- ============ RESUME ============ -->
-  <section class="section section-alt" id="resume">
-    <div class="section-head">
-      <p class="eyebrow">Resume</p>
-      <h2>Interactive resume</h2>
-    </div>
-    <div class="resume-panel">
-      <div class="resume-col">
-        <h3>Summary</h3>
-        <p>Final-year MCA student and full-stack developer focused on Python/Flask/Django and Java/JSP systems, with a growing specialization in AWS cloud computing. Comfortable owning a project from database design through deployment.</p>
-        <h3>Core Competencies</h3>
-        <ul class="check-list">
-          <li>Full-stack web application design &amp; development</li>
-          <li>Relational database design (MySQL, SQLite)</li>
-          <li>REST API design &amp; integration</li>
-          <li>Cloud fundamentals (AWS, ap-south-1)</li>
-          <li>Cryptography &amp; network security concepts</li>
-        </ul>
-      </div>
-      <div class="resume-col">
-        <h3>Education</h3>
-        <p><strong>MCA</strong> — CIMS, Bangalore City University (Final Year, CGPA 8.71)<br>
-        <strong>BCA</strong> — NRI Institute, Bangalore</p>
-        <h3>Experience</h3>
-        <p><strong>Web Development Intern</strong> — Vinqube Technologies</p>
-        <div class="resume-download">
-          <a href="assets/Karthik_GV_Resume.pdf" class="btn btn-primary" download>Download Full Resume (PDF)</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section" id="contact">
-    <div class="section-head">
-      <p class="eyebrow">Contact</p>
-      <h2>Let's work together</h2>
-      <p class="section-sub">Open to full-stack developer roles, cloud engineering opportunities, and freelance projects. Based in Bengaluru — happy to work remote too.</p>
-    </div>
-
-    <div class="contact-grid">
-      <form id="contactForm" class="contact-form" novalidate>
-        <div class="form-row">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required placeholder="Your full name">
-        </div>
-        <div class="form-row">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="you@example.com">
-        </div>
-        <div class="form-row">
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required placeholder="What's this about?">
-        </div>
-        <div class="form-row">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required placeholder="Tell me about the opportunity or project..."></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
-        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
-      </form>
-
-      <div class="contact-side">
-        <div class="contact-item">
-          <span class="contact-label">Email</span>
-          <a href="mailto:karthik18.gv@gmail.com">karthik18.gv@gmail.com</a>
-        </div>
-        <div class="contact-item">
-          <span class="contact-label">Location</span>
-          <span>Bengaluru, Karnataka, India</span>
-        </div>
-        <div class="contact-item">
-          <span class="contact-label">Languages</span>
-          <span>English, Telugu, Kannada, Hindi</span>
-        </div>
-        <div class="contact-socials">
-          <a href="https://github.com/karthik18gv-gif" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-          <a href="https://www.linkedin.com/in/karthik-g-v/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<!-- ============ FOOTER ============ -->
-<footer class="site-footer">
-  <div class="footer-wrap">
-    <p>© <span id="year"></span> Karthik G V. Built with HTML, CSS &amp; JavaScript.</p>
-    <button id="backToTop" class="icon-btn" aria-label="Back to top">↑</button>
   </div>
-</footer>
 
-<script src="js/script.js"></script>
+  <!-- ATS Resume Viewer Modal -->
+  <div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true">
+    <div class="modal-content" style="max-width:850px;">
+      <button class="modal-close-btn" id="resumeModalClose" aria-label="Close modal">✕</button>
+      
+      <div style="border-bottom:1px solid var(--border-subtle); padding-bottom:16px; margin-bottom:20px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+        <div>
+          <h2 style="font-size:1.6rem; font-weight:800; color:var(--text-main);">KARTHIK G V</h2>
+          <p style="font-family:var(--font-mono); font-size:0.85rem; color:var(--cyan);">FULL-STACK DEVELOPER | ASPIRING CLOUD ENGINEER</p>
+        </div>
+        <a href="assets/Karthik_GV_Resume.pdf" download="Karthik_GV_Resume.pdf" class="btn btn-primary btn-sm">
+          <span>Download Official PDF ⬇</span>
+        </a>
+      </div>
+
+      <div style="display:flex; flex-direction:column; gap:20px; font-size:0.92rem; color:var(--text-muted); line-height:1.6;">
+        <div>
+          <h4 style="color:var(--text-main); font-weight:700; border-bottom:1px solid var(--border-subtle); padding-bottom:4px; margin-bottom:8px;">CONTACT DETAILS</h4>
+          <p>Phone: +91 7022050129 · Email: karthik18.gv@gmail.com · Location: Bengaluru, India</p>
+          <p>LinkedIn: linkedin.com/in/karthik-g-v · GitHub: github.com/karthik18gv-gif</p>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main); font-weight:700; border-bottom:1px solid var(--border-subtle); padding-bottom:4px; margin-bottom:8px;">PROFILE</h4>
+          <p>Motivated Full-Stack Developer and MCA student with a strong foundation in Python, Java, and web technologies, along with a keen interest in cloud computing and AWS services. Experienced in building database-driven web applications with responsive frontends and scalable backends. Passionate about learning new technologies, solving real-world problems, and contributing to impactful engineering solutions.</p>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main); font-weight:700; border-bottom:1px solid var(--border-subtle); padding-bottom:4px; margin-bottom:8px;">EXPERIENCE</h4>
+          <p><strong>Cloud Computing Intern (AWS) | Zoomindata</strong> (Aug 2026 – Sep 2026)</p>
+          <ul style="padding-left:20px; margin-bottom:10px;">
+            <li>Assisted in deploying and configuring AWS core services (EC2, S3, IAM, RDS) as part of cloud-based application environments.</li>
+            <li>Supported monitoring and basic troubleshooting of cloud infrastructure, gaining hands-on exposure to real-world AWS workflows.</li>
+            <li>Documented cloud setup processes and best practices to support team knowledge sharing.</li>
+          </ul>
+
+          <p><strong>Web Development Intern | Vinqube Technologies Pvt. Ltd.</strong> (Apr 2024 – Jun 2024)</p>
+          <ul style="padding-left:20px;">
+            <li>Developed responsive UI components using HTML5, CSS3, and JavaScript, reducing page inconsistencies by ~30% across client-facing modules.</li>
+            <li>Collaborated with the development team to implement new features and improve existing functionality.</li>
+            <li>Gained hands-on experience in real-world web development workflows, version control (Git).</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main); font-weight:700; border-bottom:1px solid var(--border-subtle); padding-bottom:4px; margin-bottom:8px;">PROJECTS</h4>
+          <p><strong>NagrikSeva – Citizen Services &amp; Pension Management Portal</strong> (Node.js, Express.js, MySQL, HTML5, CSS3, JavaScript)</p>
+          <p>Unified government web portal for citizens to apply for certificates and pension applications with 4-tier RBAC, document management, and notification system.</p>
+          <p style="margin-top:8px;"><strong>Hostel Mitra – Hostel Management System</strong> (Python, Flask, HTML5, CSS3, SQLite)</p>
+          <p>Smart hostel management system for student registration, room allocation, fee tracking, leave management, complaints and communication.</p>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main); font-weight:700; border-bottom:1px solid var(--border-subtle); padding-bottom:4px; margin-bottom:8px;">EDUCATION</h4>
+          <p><strong>MCA</strong> · Community Institute of Management Studies (CIMS) · 2026 - Present · <strong>CGPA: 8.71</strong></p>
+          <p><strong>BCA</strong> · NRI Institute · 2021 - 2024 · <strong>CGPA: 8.02</strong></p>
+          <p><strong>Pre-University (PCMC)</strong> · Physics, Chemistry, Maths, Computer Science · 2021</p>
+        </div>
+
+        <div>
+          <h4 style="color:var(--text-main); font-weight:700; border-bottom:1px solid var(--border-subtle); padding-bottom:4px; margin-bottom:8px;">CERTIFICATIONS &amp; ACHIEVEMENTS</h4>
+          <p>Certifications: Python in Flask, Cloud Computing (AWS Services), Cyber Security (Basics)</p>
+          <p>Achievements: Participated in Hackathon and Intercollegiate technical events; Attended workshop on Digital Security – E-Mudhra Company.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/script.js?v=3"></script>
 </body>
 </html>
